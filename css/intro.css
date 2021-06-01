@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Poppins:wght@300;400;500&family=Staatliches&display=swap');
+
+html {
+    font-size: 62.25%;
+}
+
+body::-webkit-scrollbar {
+    width: 1em;
+}
+
+body::-webkit-scrollbar-track {
+    background: black;
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 3px;
+    background-color: darkgrey;
+}
+
+section {
+    background: #202020;
+    height: 100vh;
+    max-height: 970px;
+    max-width: 1920px;
+    padding: 0 25px;
+    position: relative;
+    margin: auto;
+}
+
+.container {
+    margin: auto;
+    width: 80%;
+}
+
+header {
+    height: 10vh;
+    background: #141414;
+    width: 100%;
+    max-width: 1920px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: fixed;
+    padding: 0 25px;
+    z-index: 1000;
+}
+
+.inner-header {
+    display: flex;
+    justify-content: left;
+}
+
+/* Logo */
+.logo {
+    transform: translateY(25%);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex: 1;
+}
+
+.logo-text {
+    color: white;
+    font-family: "Staatliches", sans-serif;
+    font-size: 3.6rem;
+    padding-right: 15px;
+}
+
+.logo-orange {
+    color: #FFB72D;
+}
+
+/* Nav */
+nav {
+    flex: 0.4;
+}
+
+nav ul {
+    display: flex;
+    align-items: flex-end;
+    height: 92%;
+    list-style: none;
+}
+
+.nav-button {
+    flex: 1;
+    text-align: center;
+}
+
+.nav-button > a {
+    text-align: center;
+    background: none;
+    color: white;
+    font-family: "Staatliches", sans-serif;
+    font-size: 3.6rem;
+    padding: 5px 25px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    transition: all .2s linear;
+    border: 2px transparent solid;
+    border-bottom: none;
+}
+
+.nav-button:hover > a {
+    background: #202020;
+}
+
+.matches {
+    position: relative;
+}
+
+.matches:hover > a {
+    border: 2px white solid;
+    border-bottom: none;
+}
+.matches:hover .matches-list {
+    opacity: 1;
+    height: 126px;
+}
+.matches-list {
+    opacity: 0;
+    transition: all .2s linear;
+    z-index: 50;
+    position: absolute;
+    top: 110%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background: #202020;
+    height: 0;
+    width: 100%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: 2px white solid;
+    border-top: none;
+    overflow: hidden;
+}
+
+.matches-button > a {
+    text-align: center;
+    font-size: 1.8rem;
+    font-family: "Staatliches", sans-serif;
+    color: white;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+}
+
+.matches-button:hover {
+    background: #111111;
+}
+
+.matches-button {
+    width: 100%;
+    transition: background .2s linear;
+}
+
+/* Intro */
+#intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner-intro {
+    text-align: center;
+}
+
+.intro-title {
+    font-family: Staatliches, sans-serif;
+    font-weight: 300;
+    font-size: 8rem;
+    color: #fff;
+    position: relative;
+}
+
+.intro-title:after {
+    content: '';
+    background: #ff7500;
+    position: absolute;
+    height: 3px;
+    border-radius: 3px;
+    width: 20%;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 50%);
+}
+
+.intro-subtitle {
+    font-family: "Indie Flower", sans-serif;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 3.2rem;
+    margin-top: 15px;
+}
+
+.intro-button {
+    background: #ffffff;
+    color: #000000;
+    font-family: Staatliches, sans-serif;
+    font-size: 3.2rem;
+    border-radius: 5px;
+    padding: 5px 25px;
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    transition: all .2s linear;
+    margin-top: 15px;
+    border: 4px transparent solid;
+}
+
+.intro-button:hover {
+    box-shadow: 6px 6px 6px 6px rgba(0, 0, 0, 0.25);
+    border: 4px rgba(0, 0, 0, 0.25) solid;
+}
+
+/* Scarecrow */
+.scarecrow {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-35%, -50%) rotate(20deg);
+}
+
+.scarecrow svg {
+
+    overflow: visible;
+}
+
+#scarecrow {
+    transform: rotate(15deg);
+    transform-origin: bottom;
+    animation: Scarecrow 8s ease infinite alternate-reverse;
+}
+
+#head {
+    transform-origin: center;
+    animation: ScarecrowHead 8s ease infinite alternate-reverse;
+}
+
+#BlueStar, #Star, #BlueCircle, #RedCircle, #YellowCircle, #GreenCircle {
+    transform-origin: center;
+}
+
+#BlueStar {
+    animation: Star 30s infinite ease alternate;
+}
+
+#Star {
+    animation: Star 30s infinite ease alternate 2s;
+}
+
+#GreenCircle {
+    animation: Star 30s infinite ease alternate 1s;
+}
+
+#YellowCircle {
+    animation: Star 30s infinite ease alternate 3s;
+}
+
+#RedCircle {
+    animation: Star 30s infinite ease alternate 1s;
+}
+
+#BlueCircle {
+    animation: Star 30s infinite ease alternate;
+}
+
+@keyframes Star {
+    0% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+    20% {
+        transform: translate(1px, -2px) rotate(15deg);
+    }
+    40% {
+        transform: translate(-2px, -1px) rotate(6deg);
+    }
+    60% {
+        transform: translate(0, 2px) rotate(-5deg);
+    }
+    80% {
+        transform: translate(2px, -2px) rotate(6deg);
+    }
+    100% {
+        transform: translate(-1px, -1px) rotate(2deg);
+    }
+}
+
+@keyframes Scarecrow {
+    to {
+        transform: rotate(-15deg);
+    }
+}
+
+@keyframes ScarecrowHead {
+    from {
+        transform: rotate(15deg);
+    }
+    to {
+        transform: rotate(-15deg);
+    }
+}
+
+.pumpman {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translateY(40%);
+    z-index: 50;
+}

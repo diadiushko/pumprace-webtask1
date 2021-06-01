@@ -1,0 +1,74 @@
+#registration {
+    background: url("../images/swimmers.png") no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.registration-title {
+    position: absolute;
+    transform: translateX(-50%);
+    top: 10%;
+    left: 50%;
+    font-family: Staatliches, sans-serif;
+    font-size: 5.4rem;
+    color: white;
+}
+
+.regform {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.66);
+    padding: 50px;
+    border-radius: 10px;
+    gap: 20px;
+}
+
+.regform > form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.regform input::placeholder {
+    color: #c9c9c9;
+    opacity: 1;
+}
+
+.regform input {
+    background: #434343;
+    color: white;
+    outline: none;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-family: Poppins, sans-serif;
+    font-size: 1.8rem;
+}
+
+.regform h3 {
+    color: #000000;
+    font-family: Staatliches, sans-serif;
+    font-size: 4.4rem;
+}
+
+.reg-button {
+    color: black;
+    font-family: Staatliches, sans-serif;
+    background: #E8B148;
+    padding: 10px 50px;
+    font-size: 2.4rem;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    transition: all .2s linear;
+}
+
+.reg-button:hover {
+    background: #edc271;
+}

@@ -1,0 +1,75 @@
+.nobr {
+    white-space: nowrap;
+}
+
+.info-titlebox {
+    color: white;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 150;
+    text-align: center;
+}
+
+.info-title {
+    font-family: Staatliches, sans-serif;
+    font-size: 6.4rem;
+}
+
+.info-subtitle {
+    font-size: 2.2rem;
+    font-weight: 300;
+    font-family: Montserrat, sans-serif;
+}
+
+#info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pump-panel {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    width: 1920px;
+}
+
+.pump-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex: 1;
+    min-height: 400px;
+}
+
+.pump-img {
+    background: none;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 10px;
+    transition: all .2s linear;
+}
+
+.pump-img img {
+    pointer-events: none;
+}
+
+.pump-img:hover {
+    box-shadow: 4px 4px 4px 4px black;
+}
+
+.pump-block img {
+    width: 180px;
+}
+
+.pump-text {
+    font-family: "Indie Flower", sans-serif;
+    color: white;
+    font-size: 2.8rem;
+    text-align: center;
+    font-weight: 400;
+    margin-top: 20px;
+}

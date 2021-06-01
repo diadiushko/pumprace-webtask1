@@ -1,0 +1,134 @@
+.modal-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.67);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    animation: ModalWrap 0.4s linear forwards;
+    z-index: 1555;
+}
+
+.modal {
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    padding: 2.5rem 2rem;
+    border-radius: 10px;
+    min-height: 400px;
+    max-width: 350px;
+    position: relative;
+    transform: translateY(-80vh);
+    animation: Modal .6s ease forwards;
+}
+
+@keyframes Modal {
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes ModalWrap {
+    to {
+        opacity: 1;
+    }
+}
+
+.modal-title {
+    font-family: Staatliches, sans-serif;
+    text-align: center;
+    font-size: 3.2rem;
+    flex: .2;
+    margin: auto;
+}
+
+.modal form {
+    display: flex;
+    flex-direction: column;
+    flex: .7;
+    justify-content: space-around;
+}
+
+#modal-input {
+    border: 2px solid black;
+    padding: 5px 15px;
+    border-radius: 25px;
+    font-size: 2rem;
+    outline: none;
+    font-family: Poppins, sans-serif;
+}
+
+[for="modal-input"] {
+    font-size: 2rem;
+    font-family: Poppins, sans-serif;
+    text-align: center;
+}
+
+.modal-button {
+    margin: 0 auto;
+    padding: 10px 30px;
+    border-radius: 5px;
+    background: #000;
+    color: white;
+    font-size: 2.4rem;
+    font-family: Staatliches, sans-serif;
+    cursor: pointer;
+    transition: background .2s linear;
+}
+
+.modal-button:hover {
+    background: #181818;
+}
+
+.modal-close {
+    font-size: 2.4rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-top-right-radius: 7px;
+    cursor: pointer;
+    background: #000;
+    color: white;
+    padding: 0 3px;
+}
+
+/* svg */
+.modal svg {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+#inner {
+    fill: #ff7f16;
+    animation: Circles 12s linear infinite alternate;
+}
+
+#outer {
+    fill: #ff7f16;
+    animation: Circles 12s 2s linear infinite alternate;
+}
+
+@keyframes Circles {
+    20% {
+        fill: #c66413;
+    }
+    40% {
+        fill: #bb5c0d;
+    }
+    60% {
+        fill: #e68737;
+    }
+    80% {
+        fill: #b57b4a;
+    }
+    100% {
+        fill: #e9ab76;
+    }
+}
